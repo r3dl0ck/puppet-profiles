@@ -5,9 +5,9 @@
 # @example
 #   include profiles::sync_root_password
 class profiles::sync_root_password (
-  String $passwd = undef,
+  String $passwd = '',
 ) {
-  if $passwd {
+  unless $passwd == '' {
     user { 'root_account':
       name     => 'root',
       password => Sensitive($passwd),

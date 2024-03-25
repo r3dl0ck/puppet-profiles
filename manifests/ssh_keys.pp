@@ -7,7 +7,5 @@
 class profiles::ssh_keys (
   $keys = { 'undef'=> { 'user'=> undef, 'type'=> undef , 'key'=> undef }, },
 ) {
-  if $keys {
-    create_resources('ssh_authorized_key', $ssh_keys)
-  }
+    create_resources('ssh_authorized_key', $keys)
 }

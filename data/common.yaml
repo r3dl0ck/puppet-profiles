@@ -1,5 +1,17 @@
 ---
-pkgs:
+profiles::packages::pkgs:
   - tmux
   - git
   - mc
+
+profiles::sync_root_password::passwd: ''
+
+profiles::ssh_keys::keys:
+  jan:
+    user: root
+    type: ssh-rsa
+    key: AAAAB3NzaC1yc2EAAAADAQABAAABgQC0crI+TilnSzoenka34N+yOea2QxQI7DMZhhcP5yeij2bYeyePGz7uM7qq/KDw88h7mmeTs0Avjjpmkhkuqs9yRx5aV8dzOAny2MidVlGJ3OL8FUYEjbPkAyaeV4Tfp81Po7PT9VZxSnZ7cnxg4AH3qAszEZg77YwVvEV3lLp0OtI43dr/LQLxTiWXagtREhrXmK1RM3WYpICSSm1t14wZE35r4DIXEW9DiZW3LQEXMFKecf+Sf82XJ7rxXBmOJSxoNZI6+g2yiWDyizGpO2tV1hmpmudXRYVJFkP3no9lEKldL8KEM5Qy43kdX9kfkvLAoxk3LHxbHFvYwzi9DKtsLh8yqqjdSF6IHYPSUS4EuH0ACW4wri2VIgTa0S2KI6l65uTjLK3rbbjIdQSrOAsd6n1yxNtMm/M/TFhByIPqYcCl++3OUEpgWt2ofTKW7lShgcXHHZ5RsvgDfiLzW9O3gCouIpYZBcWP0tLxjz/JhrXHuP1Ix2Gu6TwNidaVKJ0=
+  admin:
+    user: root
+    type: ssh-rsa
+    key: AAAAB3NzaC1yc2EAAAADAQABAAABgQC0crI+TilnSzoenka34N+yOea2QxQI7DMZhhcP5yeij2bYeyePGz7uM7qq/KDw88h7mmeTs0Avjjpmkhkuqs9yRx5aV8dzOAny2MidVlGJ3OL8FUYEjbPkAyaeV4Tfp81Po7PT9VZxSnZ7cnxg4AH3qAszEZg77YwVvEV3lLp0OtI43dr/LQLxTiWXagtREhrXmK1RM3WYpICSSm1t14wZE35r4DIXEW9DiZW3LQEXMFKecf+Sf82XJ7rxXBmOJSxoNZI6+g2yiWDyizGpO2tV1hmpmudXRYVJFkP3no9lEKldL8KEM5Qy43kdX9kfkvLAoxk3LHxbHFvYwzi9DKtsLh8yqqjdSF6IHYPSUS4EuH0ACW4wri2VIgTa0S2KI6l65uTjLK3rbbjIdQSrOAsd6n1yxNtMm/M/TFhByIPqYcCl++3OUEpgWt2ofTKW7lShgcXHHZ5RsvgDfiLzW9O3gCouIpYZBcWP0tLxjz/JhrXHuP1Ix2Gu6TwNidaVKJ0=
